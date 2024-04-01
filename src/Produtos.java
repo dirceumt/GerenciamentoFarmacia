@@ -1,6 +1,5 @@
 public class Produtos {
 	//cria classe produtos
-
 	String descricao;
 	double preco;
 	boolean possuiPrecoEntre(double precoMinimo, double precoMaximo) {

@@ -10,7 +10,6 @@ public class Cadastro {
 		itens.add(item); //chama a var itens que aponta para o arraylist e usa o metodo .add para
 		// adicionar o objeto item ao arraylist
 	}
-
 	void removerItem(int indice) {//cria o metodo removerItem e pasa como parametro indice do tipo primitivo int
 		itens.remove(indice); //chama var itens que aponta para o array e usa o metodo .remove o objeto que
 		//vai está na no indice determinado;
@@ -23,7 +22,6 @@ public class Cadastro {
 			}
 		}
 	}
-
 	ArrayList<Produtos> consultarItensPorPreco(double precoMinimo, double precoMaximo) {
 		ArrayList<Produtos> itensEncontrados = new ArrayList<>();
 
@@ -32,10 +30,8 @@ public class Cadastro {
 				itensEncontrados.add(item);
 			}
 		}
-
 		// boa prática
 		return itensEncontrados;
-
 		// má prática
 		// return itensEncontrados.isEmpty() ? null : itensEncontrados;
 	}
